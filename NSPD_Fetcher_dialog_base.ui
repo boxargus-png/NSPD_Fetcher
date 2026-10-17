@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,0,0,0,0,0,0">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="toolTip">
+      <string />
+     </property>
+     <column>
+      <property name="text">
+       <string>Данные НСПД</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Единицы кадастрового деления</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Кадастровые округа</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кадастровые районы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кадастровые кварталы</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Административные границы</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Государственная граница Российской Федерации</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Субъекты Российской Федерации</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Муниципальные образования</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Населенные пункты</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Земельные участки</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Земельные участки из ЕГРН</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земельные участки, образуемые по схеме расположения земельного участка</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земельные участки, выставленные на аукцион</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земельные участки, свободные от прав третьих лиц</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земля для стройки ПКК</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земля для туризма ПКК</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Земельные участки, образуемые по проекту межевания территории</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Объекты капитального строительства</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Здания</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Сооружения</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Объекты незавершенного строительства</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Зоны с особыми условиями использования территории</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Зонирование и планирование территории</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Территориальные зоны</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Красные линии</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Природные территории</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Особо охраняемые природные территории</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Охотничьи угодья</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Лесничества</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Граница лесопарка</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Береговые линии (границы водных объектов)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Зоны социального, экономического развития</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Особые экономические зоны</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Территории опережающего развития</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Игорные зоны</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Территории объектов культурного наследия</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Иные территории</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Территории выполнения комплексных кадастровых работ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Негативные процессы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Объекты туристского интереса</string>
+       </property>
+      </item>
+     </item>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>160</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelSelectedCategories">
+     <property name="text">
+      <string>Категории не выбраны</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidgetQueryMode">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabCoverage">
+      <attribute name="title">
+       <string>По охвату</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_CoverageTab">
+       <item>
+        <layout class="QVBoxLayout" name="coverageSourceLayout">
+         <item>
+          <widget class="QRadioButton" name="rbManualCoverage">
+           <property name="text">
+            <string>Нарисовать на карте</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbLayerCoverage">
+           <property name="text">
+            <string>Из слоя</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QgsMapLayerComboBox" name="cbLayer" />
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="coverageActionsLayout">
+         <item>
+          <widget class="QPushButton" name="btnSetCoverage">
+           <property name="text">
+            <string>Нарисовать охват</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelCoverageStatusIcon">
+           <property name="text"><string /></property>
+           <property name="toolTip"><string>Охват задан</string></property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch><verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelCoverage">
+           <property name="text">
+            <string>Охват не задан</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="btnShowCoverage">
+           <property name="text">
+            <string>Показать охват на карте</string>
+           </property>
+           <property name="toolTip">
+            <string>Показать охват на карте</string>
+           </property>
+           <property name="accessibleName">
+            <string>Показать охват на карте</string>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonIconOnly</enum>
+           </property>
+           <property name="iconSize">
+            <size><width>20</width><height>20</height></size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelCoverageHint">
+         <property name="text">
+          <string>Enter — завершить полигон · Esc — отменить</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabCadastral">
+      <attribute name="title">
+       <string>По кадастровым номерам</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_CadastralTab">
+       <item>
+        <layout class="QVBoxLayout" name="cadastralSourceLayout">
+         <item>
+          <widget class="QRadioButton" name="rbManualCadastral">
+           <property name="text">
+            <string>Ввести номера</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbLayerCadastral">
+           <property name="text">
+            <string>Из таблицы или слоя</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEditCadastral">
+         <property name="placeholderText">
+          <string>Номера через запятую или с новой строки, например: 52:18:0050232:698</string>
+         </property>
+         <property name="maximumHeight">
+          <number>72</number>
+         </property>
+         <property name="minimumHeight">
+          <number>64</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widgetCadastralLayer">
+         <layout class="QFormLayout" name="cadastralLayerLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelCadastralLayer">
+            <property name="text">
+             <string>Слой:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QgsMapLayerComboBox" name="cbLayerCadastral" />
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelCadastralField">
+            <property name="text">
+             <string>Поле с номерами:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QgsFieldComboBox" name="cbFieldCadastral" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelCadastralHint">
+         <property name="text">
+          <string>При наличии выделения используются только выбранные объекты.</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBoxCRS">
+     <property name="title">
+      <string>Результат</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="chkEnableMsk">
+        <property name="text">
+         <string>Преобразовать в МСК</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widgetMskOptions" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelMsk">
+           <property name="text">
+            <string>МСК результата:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QgsProjectionSelectionWidget" name="crsMsk">
+           <property name="toolTip">
+            <string>Выберите конечную МСК с параметрами перехода ГОСТ 2008. Промежуточная система создаётся автоматически.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkRoundMm">
+           <property name="text">
+            <string>Округлить координаты до 0,01 м</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="btnLoadSettings">
+     <property name="text">
+      <string>Параметры загрузки</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::RightArrow</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="groupBoxSettings">
+     <layout class="QVBoxLayout" name="verticalLayout_API">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="delayLayout">
+        <item>
+         <widget class="QLabel" name="labelDelay">
+          <property name="text">
+           <string>Пауза между запросами: от</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinDelayMin">
+          <property name="suffix">
+           <string> с</string>
+          </property>
+          <property name="value">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelDelayTo">
+          <property name="text">
+           <string>до</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinDelayMax">
+          <property name="suffix">
+           <string> с</string>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="delaySpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelDelayWarning">
+        <property name="text">
+         <string />
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupTaskProgress">
+     <property name="title"><string>Ход загрузки</string></property>
+     <layout class="QVBoxLayout" name="taskProgressLayout">
+      <item><layout class="QHBoxLayout" name="taskStatusLayout">
+       <item><widget class="QLabel" name="labelTaskStatus">
+        <property name="text"><string /></property>
+        <property name="textFormat"><enum>Qt::PlainText</enum></property>
+        <property name="wordWrap"><bool>true</bool></property>
+        <property name="sizePolicy"><sizepolicy hsizetype="Expanding" vsizetype="Preferred"><horstretch>1</horstretch><verstretch>0</verstretch></sizepolicy></property>
+       </widget></item>
+       <item><widget class="QLabel" name="labelTaskElapsed"><property name="text"><string>Прошло: 00:00</string></property></widget></item>
+      </layout></item>
+      <item><widget class="QLabel" name="labelTaskDetail">
+       <property name="text"><string /></property>
+       <property name="textFormat"><enum>Qt::PlainText</enum></property>
+       <property name="wordWrap"><bool>true</bool></property>
+      </widget></item>
+      <item><widget class="QProgressBar" name="progressRequests">
+       <property name="value"><number>0</number></property>
+       <property name="format"><string>Запросы: %v / %m · %p%</string></property>
+       <property name="toolTip"><string>Доля завершённых запросов, включая запросы с ошибкой. После запросов плагин добавляет полученные данные в слои.</string></property>
+      </widget></item>
+      <item><widget class="QLabel" name="labelTaskCounts">
+       <property name="text"><string /></property>
+       <property name="textFormat"><enum>Qt::PlainText</enum></property>
+       <property name="wordWrap"><bool>true</bool></property>
+       <property name="toolTip"><string>Счётчики записей до удаления точных повторов. Ответы соседних запросов могут содержать одни и те же объекты.</string></property>
+      </widget></item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="footerLayout">
+     <item>
+      <widget class="QPushButton" name="btnOpenLog">
+       <property name="text">
+        <string>Журнал</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="footerSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancelFetch">
+       <property name="text">
+        <string>Отменить загрузку</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnFetch">
+       <property name="text">
+        <string>Загрузить данные</string>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <property name="windowTitle">
+   <string>Загрузка данных НСПД</string>
+  </property>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgis.gui</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsProjectionSelectionWidget</class>
+   <extends>QWidget</extends>
+   <header>qgis.gui</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsFieldComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgis.gui</header>
+  </customwidget>
+ </customwidgets>
+ <resources />
+ <connections />
+</ui>

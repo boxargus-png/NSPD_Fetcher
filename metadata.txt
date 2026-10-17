@@ -1,0 +1,25 @@
+[general]
+name=NSPD Fetcher
+qgisMinimumVersion=3.40
+qgisMaximumVersion=3.99
+description=Download Russian cadastral data from NSPD by area or cadastral number, with optional local MSK coordinates.
+version=0.1.0
+author=boxargus-png
+email=boxargus@gmail.com
+about=Загрузка пространственных данных НСПД по нарисованному охвату, объектам слоя или кадастровым номерам. Буфер запроса и локальная проверка пересечения защищают от пропусков у границ охвата. Для преобразования в поддерживаемую МСК достаточно выбрать одну систему координат; промежуточная CRS формируется автоматически. При ошибке запроса или отмене уже полученные объекты добавляются во временные слои QGIS.
+    Requires internet access to nspd.gov.ru and the QGIS native Processing provider. No additional Python packages. Coverage: Russia; interface: Russian. Tested on Windows with QGIS 3.40.4. Linux and macOS have not been tested; QGIS 4 is not supported. Results are temporary layers and must be saved by the user.
+repository=https://github.com/boxargus-png/NSPD_Fetcher
+homepage=https://github.com/boxargus-png/NSPD_Fetcher#readme
+tracker=https://github.com/boxargus-png/NSPD_Fetcher/issues
+license=GPL-2.0-or-later
+changelog=0.1.0 — First experimental release.
+    Native QGIS networking, validated API responses and preservation of partial results.
+    Buffered area queries with local selection before coordinate rounding; exact duplicate removal.
+    Single MSK selector, transparent coverage outline and detailed download progress.
+tags=cadastre,nspd,rosreestr,russia,msk
+category=Web
+icon=icon.png
+experimental=True
+deprecated=False
+server=False
+hasProcessingProvider=False

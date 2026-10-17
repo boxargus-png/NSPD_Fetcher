@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.anaconda/
+.vscode/
+.idea/
+build/
+dist/
+*.ui~
+*.qrc~
+*.log
+*.zip
+*.zip.sha256

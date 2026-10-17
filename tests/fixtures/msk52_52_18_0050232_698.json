@@ -1,0 +1,36 @@
+{
+  "cadastral_number": "52:18:0050232:698",
+  "provenance": {
+    "extract_formed_on": "2024-11-07",
+    "extract_filename": "report-0246f3ad-423b-44b4-b45d-4ae741f677eb-number-52-01[0].xml",
+    "extract_sha256": "56259dd6fdb052762796260ad253bfbc805d7cdc69af102b1d52a63f97ee0ea6",
+    "extract_coordinate_path": "land_record/contours_location/contours/contour/entity_spatial/spatials_elements/spatial_element/ordinates",
+    "extract_crs_label": "МСК-52, зона ",
+    "zone_note": "Zone 2 is inferred from the coordinate range, the neighboring parcel 52:18:0050232:701 and the numerical comparison. The extract omits its zone number.",
+    "extract_point_uncertainty_m": 0.1,
+    "nspd_retrieved_at_utc": "2026-10-17T06:28:06.124286+00:00",
+    "nspd_url": "https://nspd.gov.ru/api/geoportal/v2/search/geoportal?query=52%3A18%3A0050232%3A698&layersId=36048",
+    "original_nspd_response_sha256": "a8732e5fb9e1512eae87f16470152f69eb5f534a3816efbb13bb66bae2085e57",
+    "note": "Only geometry and its reference coordinates are retained. Residuals test reproduction of the extract, not survey accuracy. No live service or original document is needed by the test."
+  },
+  "target_proj": "+proj=tmerc +lat_0=0 +lon_0=44.55 +k=1 +x_0=2250000 +y_0=-5714743.504 +ellps=krass +towgs84=23.57,-140.95,-79.8,0,0.35,0.79,-0.22 +units=m +no_defs",
+  "legacy_working_proj": "+proj=tmerc +lat_0=0 +lon_0=44.55 +k=1 +x_0=2250000 +y_0=-5714743.504 +ellps=krass +towgs84=23.92,-141.27,-80.9,0,0.35,0.82,-0.12 +units=m +no_defs",
+  "nspd_geometry": {
+    "type": "Polygon",
+    "crs": {"type": "name", "properties": {"name": "EPSG:3857"}},
+    "coordinates": [[
+      [4891188.718931896, 7615018.474078346],
+      [4891208.888386821, 7615010.044298994],
+      [4891216.490928489, 7615028.3392461045],
+      [4891196.321593383, 7615036.751055555],
+      [4891188.718931896, 7615018.474078346]
+    ]]
+  },
+  "expected_ring_easting_northing": [
+    [2212223.66, 525621.69],
+    [2212227.98, 525631.80],
+    [2212239.16, 525627.03],
+    [2212234.84, 525616.91],
+    [2212223.66, 525621.69]
+  ]
+}
