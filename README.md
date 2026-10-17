@@ -7,10 +7,11 @@ cadastral number, with optional conversion to supported local MSK coordinate
 systems. Russian interface; no additional Python packages. Requires QGIS
 3.40–3.x and internet access. Tested on Windows with QGIS 3.40.4.
 
-**0.1.0 — первый экспериментальный выпуск.**
+**0.1.1 — экспериментальный выпуск.**
 [Исходный код](https://github.com/boxargus-png/NSPD_Fetcher) и
 [трекер ошибок](https://github.com/boxargus-png/NSPD_Fetcher/issues) находятся на GitHub.
-Плагин подготовлен к публикации в каталоге QGIS; загрузка в каталог ещё не выполнена.
+[Страница в каталоге QGIS](https://plugins.qgis.org/plugins/NSPD_Fetcher/).
+Установка через менеджер модулей станет доступна после одобрения каталога.
 
 ## Возможности
 
@@ -22,7 +23,7 @@ systems. Russian interface; no additional Python packages. Requires QGIS
 ## Установка
 
 ### Установка из файла (ZIP-архив)
-1. Возьмите установочный архив `NSPD_Fetcher-0.1.0.zip` у автора или соберите его из исходников (команда ниже). После размещения архива он будет доступен в [Releases](https://github.com/boxargus-png/NSPD_Fetcher/releases). ZIP с исходным репозиторием не заменяет установочный архив.
+1. Возьмите установочный архив `NSPD_Fetcher-0.1.1.zip` у автора или соберите его из исходников (команда ниже). После размещения архива он будет доступен в [Releases](https://github.com/boxargus-png/NSPD_Fetcher/releases). ZIP с исходным репозиторием не заменяет установочный архив.
 2. В QGIS перейдите в меню **Модули** -> **Управление модулями**.
 3. Выберите вкладку **Установить из ZIP** и укажите скачанный архив.
 
@@ -269,7 +270,7 @@ $env:QT_QPA_PLATFORM = 'offscreen'
 python -B scripts/build_release.py
 ```
 
-В `dist` появятся `NSPD_Fetcher-0.1.0.zip`, его SHA-256 и JSON-манифест
+В `dist` появятся `NSPD_Fetcher-0.1.1.zip`, его SHA-256 и JSON-манифест
 с хешами включённых файлов. Используется явный список из `pb_tool.cfg`:
 журналы, выписки, тесты, профили и содержимое `build` в архив не попадают.
 Внутри ZIP находится одна папка `NSPD_Fetcher`, включая лицензию и документацию.
@@ -283,7 +284,7 @@ python -B scripts/build_release.py
 Проверка именно собранного архива в изолированном профиле (Python из QGIS):
 
 ```powershell
-& 'C:\Program Files\QGIS 3.40.4\bin\python-qgis-ltr.bat' -B scripts/check_release.py dist/NSPD_Fetcher-0.1.0.zip
+& 'C:\Program Files\QGIS 3.40.4\bin\python-qgis-ltr.bat' -B scripts/check_release.py dist/NSPD_Fetcher-0.1.1.zip
 ```
 
 При добавлении модулей обновляйте `python_files` в `pb_tool.cfg` и `PY_FILES` в

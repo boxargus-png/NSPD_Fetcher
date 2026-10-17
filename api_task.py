@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Cancellable QGIS workers. HTTP details live in api_client."""
-import random
+from random import SystemRandom
 import time
 import math
 from dataclasses import replace
@@ -56,7 +56,7 @@ class NspdTask(QgsTask):
         self.feedback.cancel()
 
     def _pause(self):
-        deadline = time.monotonic() + random.uniform(self.delay_min, self.delay_max)
+        deadline = time.monotonic() + SystemRandom().uniform(self.delay_min, self.delay_max)
         last_second = None
         while not self.isCanceled():
             remaining = deadline - time.monotonic()

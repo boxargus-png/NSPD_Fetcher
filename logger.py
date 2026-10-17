@@ -37,7 +37,7 @@ def _write_to_file(level_str, message):
         with open(LOG_FILE_PATH, "a", encoding="utf-8") as f:
             f.write(f"[{now_str}] [{level_str}] {message}\n")
     except Exception:
-        pass
+        logging.getLogger(TAG).warning("Could not write the plugin log file", exc_info=True)
 
 def log_info(message):
     """Информационное сообщение."""
@@ -46,7 +46,7 @@ def log_info(message):
         from qgis.core import QgsMessageLog, Qgis
         QgsMessageLog.logMessage(str(message), TAG, level=Qgis.Info)
     except Exception:
-        pass
+        logging.getLogger(TAG).debug("QGIS message log unavailable", exc_info=True)
     logging.getLogger(TAG).info(str(message))
 
 def log_success(message):
@@ -57,7 +57,7 @@ def log_success(message):
         level = getattr(Qgis, "Success", Qgis.Info)
         QgsMessageLog.logMessage(str(message), TAG, level=level)
     except Exception:
-        pass
+        logging.getLogger(TAG).debug("QGIS message log unavailable", exc_info=True)
     logging.getLogger(TAG).info(f"[SUCCESS] {message}")
 
 def log_warning(message):
@@ -67,7 +67,7 @@ def log_warning(message):
         from qgis.core import QgsMessageLog, Qgis
         QgsMessageLog.logMessage(str(message), TAG, level=Qgis.Warning)
     except Exception:
-        pass
+        logging.getLogger(TAG).debug("QGIS message log unavailable", exc_info=True)
     logging.getLogger(TAG).warning(str(message))
 
 def log_error(message, exc_info=None):
@@ -85,7 +85,7 @@ def log_error(message, exc_info=None):
         from qgis.core import QgsMessageLog, Qgis
         QgsMessageLog.logMessage(full_msg, TAG, level=Qgis.Critical)
     except Exception:
-        pass
+        logging.getLogger(TAG).debug("QGIS message log unavailable", exc_info=True)
     logging.getLogger(TAG).error(full_msg)
 
 def log_debug(message):
@@ -95,5 +95,5 @@ def log_debug(message):
         from qgis.core import QgsMessageLog, Qgis
         QgsMessageLog.logMessage(str(message), TAG, level=Qgis.Info)
     except Exception:
-        pass
+        logging.getLogger(TAG).debug("QGIS message log unavailable", exc_info=True)
     logging.getLogger(TAG).debug(str(message))
